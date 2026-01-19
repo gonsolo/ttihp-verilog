@@ -44,6 +44,10 @@ project:
     - "tinyQV/cpu/latch_reg.v"
     - "tinyQV/cpu/time.v"
     - "tinyQV/peri/uart/uart_tx.v"
+    - "user_peripherals/uart/peri_uart.v"
+    - "user_peripherals/uart/uart_rx.v"
+    - "user_peripherals/uart/uart_tx.v"
+
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
