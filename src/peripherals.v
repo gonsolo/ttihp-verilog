@@ -452,24 +452,20 @@ module tinyQV_peripherals #(parameter CLOCK_MHZ=64) (
         .user_interrupt(user_interrupts[14])
     );
 
-    tqvp_full_empty i_tinytone15 (
-        .CLK(clk),
-        .RST_N(rst_n),
+    tqvp_full_empty i_user_peri15 (
+        .clk(clk),
+        .rst_n(rst_n),
 
-        .uo_out_ui_in(ui_in),
+        .ui_in(ui_in),
         .uo_out(uo_out_from_user_peri[15]),
 
-        .write_data_address(addr_in[5:0]),
-        .write_data_data(data_in),
-        .EN_write_data(1'b1),
+        .address(addr_in[5:0]),
+        .data_in(data_in),
 
-        .write_data_data_write_n(data_write_n    | {2{~peri_user[15]}}),
-        
-        .read_data_address(addr_in[5:0]),
-        .read_data_data_read_n(data_read_n_peri | {2{~peri_user[15]}}),
-        .EN_read_data(1'b1),
+        .data_write_n(data_write_n    | {2{~peri_user[15]}}),
+        .data_read_n(data_read_n_peri | {2{~peri_user[15]}}),
 
-        .read_data(data_from_user_peri[15]),
+        .data_out(data_from_user_peri[15]),
         .data_ready(data_ready_from_user_peri[15]),
 
         .user_interrupt(user_interrupts[15])
@@ -754,23 +750,6 @@ module tinyQV_peripherals #(parameter CLOCK_MHZ=64) (
         .data_ready(data_ready_from_user_peri[17])
     );
 
-    tqvp_full_empty i_user_peri33 (
-        .clk(clk),
-        .rst_n(rst_n),
-
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[17]),
-
-        .address(addr_in[5:0]),
-        .data_in(data_in),
-
-        .data_write_n(data_write_n    | {2{~peri_user[17]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[17]}}),
-
-        .data_out(data_from_user_peri[17]),
-        .data_ready(data_ready_from_user_peri[17])
-    );
-
     tqvp_full_empty i_user_peri34 (
         .clk(clk),
         .rst_n(rst_n),
@@ -854,23 +833,6 @@ module tinyQV_peripherals #(parameter CLOCK_MHZ=64) (
 
         .data_out(data_from_user_peri[22]),
         .data_ready(data_ready_from_user_peri[22])
-    );
-
-    tqvp_full_empty i_user_peri39 (
-        .clk(clk),
-        .rst_n(rst_n),
-
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[23]),
-
-        .address(addr_in[5:0]),
-        .data_in(data_in),
-
-        .data_write_n(data_write_n    | {2{~peri_user[23]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[23]}}),
-
-        .data_out(data_from_user_peri[23]),
-        .data_ready(data_ready_from_user_peri[23])
     );
 
     Borg i_user_peri39 (
