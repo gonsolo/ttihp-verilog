@@ -23,6 +23,7 @@ project:
     - "peri_full_empty.v"
     - "peri_full_example_no_irq.v"
     - "peri_byte_example.v"
+    - "user_peripherals/spi.v"
     - "user_peripherals/borg/AddRawFN.sv"
     - "user_peripherals/borg/AddRecFN.sv"
     - "user_peripherals/borg/MulFullRawFN.sv"

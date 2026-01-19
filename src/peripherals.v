@@ -218,469 +218,469 @@ module tinyQV_peripherals #(parameter CLOCK_MHZ=64) (
     );
 
     // Peripheral 3 is a full peripheral but with no interrupt
-    tqvp_game_pmod i_user_peri03(
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_game_pmod i_user_peri03(
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[3]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[3]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[3]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[3]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[3]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[3]}}),
 
-        .data_out(data_from_user_peri[3]),
-        .data_ready(data_ready_from_user_peri[3])
-    );
+    //    .data_out(data_from_user_peri[3]),
+    //    .data_ready(data_ready_from_user_peri[3])
+    //);
 
     // --------------------------------------------------------------------- //
     // Full interface peripherals
 
-    tqvp_sohaib_npu i_user_peri04(
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_sohaib_npu i_user_peri04(
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[4]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[4]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[4]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[4]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[4]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[4]}}),
 
-        .data_out(data_from_user_peri[4]),
-        .data_ready(data_ready_from_user_peri[4]),
+    //    .data_out(data_from_user_peri[4]),
+    //    .data_ready(data_ready_from_user_peri[4]),
 
-        .user_interrupt(user_interrupts[4])
-    );
+    //    .user_interrupt(user_interrupts[4])
+    //);
 
-    tqvp_htfab_baby_vga i_user_peri05 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_htfab_baby_vga i_user_peri05 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[5]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[5]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[5]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[5]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[5]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[5]}}),
 
-        .data_out(data_from_user_peri[5]),
-        .data_ready(data_ready_from_user_peri[5]),
+    //    .data_out(data_from_user_peri[5]),
+    //    .data_ready(data_ready_from_user_peri[5]),
 
-        .user_interrupt(user_interrupts[5])
-    );
+    //    .user_interrupt(user_interrupts[5])
+    //);
 
-    tqvp_nkanderson_wdt i_user_peri06 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_nkanderson_wdt i_user_peri06 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[6]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[6]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[6]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[6]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[6]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[6]}}),
 
-        .data_out(data_from_user_peri[6]),
-        .data_ready(data_ready_from_user_peri[6]),
+    //    .data_out(data_from_user_peri[6]),
+    //    .data_ready(data_ready_from_user_peri[6]),
 
-        .user_interrupt(user_interrupts[6])
-    );
+    //    .user_interrupt(user_interrupts[6])
+    //);
 
-    tt_um_tqv_jesari_CAN i_user_peri07 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tt_um_tqv_jesari_CAN i_user_peri07 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[7]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[7]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[7]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[7]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[7]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[7]}}),
 
-        .data_out(data_from_user_peri[7]),
-        .data_ready(data_ready_from_user_peri[7]),
+    //    .data_out(data_from_user_peri[7]),
+    //    .data_ready(data_ready_from_user_peri[7]),
 
-        .user_interrupt(user_interrupts[7])
-    );
+    //    .user_interrupt(user_interrupts[7])
+    //);
 
-    tqvp_full_empty i_prism08 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_full_empty i_prism08 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[8]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[8]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[8]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[8]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[8]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[8]}}),
 
-        .data_out(data_from_user_peri[8]),
-        .data_ready(data_ready_from_user_peri[8]),
+    //    .data_out(data_from_user_peri[8]),
+    //    .data_ready(data_ready_from_user_peri[8]),
 
-        .user_interrupt(user_interrupts[8])
-    );
+    //    .user_interrupt(user_interrupts[8])
+    //);
 
-    tqvp_rebelmike_vga_gfx i_user_peri09 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_rebelmike_vga_gfx i_user_peri09 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[9]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[9]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[9]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[9]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[9]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[9]}}),
 
-        .data_out(data_from_user_peri[9]),
-        .data_ready(data_ready_from_user_peri[9]),
+    //    .data_out(data_from_user_peri[9]),
+    //    .data_ready(data_ready_from_user_peri[9]),
 
-        .user_interrupt(user_interrupts[9])
-    );
+    //    .user_interrupt(user_interrupts[9])
+    //);
 
-    tqvp_jnms_pdm i_pdm10 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_jnms_pdm i_pdm10 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[10]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[10]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[10]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[10]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[10]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[10]}}),
 
-        .data_out(data_from_user_peri[10]),
-        .data_ready(data_ready_from_user_peri[10]),
+    //    .data_out(data_from_user_peri[10]),
+    //    .data_ready(data_ready_from_user_peri[10]),
 
-        .user_interrupt(user_interrupts[10])
-    );
+    //    .user_interrupt(user_interrupts[10])
+    //);
 
-    tqvp_hx2003_pulse_transmitter i_user_peri11 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_hx2003_pulse_transmitter i_user_peri11 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[11]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[11]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[11]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[11]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[11]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[11]}}),
 
-        .data_out(data_from_user_peri[11]),
-        .data_ready(data_ready_from_user_peri[11]),
+    //    .data_out(data_from_user_peri[11]),
+    //    .data_ready(data_ready_from_user_peri[11]),
 
-        .user_interrupt(user_interrupts[11])
-    );
+    //    .user_interrupt(user_interrupts[11])
+    //);
 
-    tqvp_CORDIC i_user_peri12 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_CORDIC i_user_peri12 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[12]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[12]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[12]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[12]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[12]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[12]}}),
 
-        .data_out(data_from_user_peri[12]),
-        .data_ready(data_ready_from_user_peri[12]),
+    //    .data_out(data_from_user_peri[12]),
+    //    .data_ready(data_ready_from_user_peri[12]),
 
-        .user_interrupt(user_interrupts[12])
-    );
+    //    .user_interrupt(user_interrupts[12])
+    //);
 
-    tqvp_cattuto_vgaconsole i_tqvp_cattuto_vgaconsole (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_cattuto_vgaconsole i_tqvp_cattuto_vgaconsole (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[13]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[13]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[13]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[13]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[13]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[13]}}),
 
-        .data_out(data_from_user_peri[13]),
-        .data_ready(data_ready_from_user_peri[13]),
+    //    .data_out(data_from_user_peri[13]),
+    //    .data_ready(data_ready_from_user_peri[13]),
 
-        .user_interrupt(user_interrupts[13])
-    );
+    //    .user_interrupt(user_interrupts[13])
+    //);
 
-    tqvp_full_empty i_user_peri14 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_full_empty i_user_peri14 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[14]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[14]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[14]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[14]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[14]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[14]}}),
 
-        .data_out(data_from_user_peri[14]),
-        .data_ready(data_ready_from_user_peri[14]),
+    //    .data_out(data_from_user_peri[14]),
+    //    .data_ready(data_ready_from_user_peri[14]),
 
-        .user_interrupt(user_interrupts[14])
-    );
+    //    .user_interrupt(user_interrupts[14])
+    //);
 
-    mkTinyTone_Peripheral i_tinytone15 (
-        .CLK(clk),
-        .RST_N(rst_n),
+    //mkTinyTone_Peripheral i_tinytone15 (
+    //    .CLK(clk),
+    //    .RST_N(rst_n),
 
-        .uo_out_ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[15]),
+    //    .uo_out_ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[15]),
 
-        .write_data_address(addr_in[5:0]),
-        .write_data_data(data_in),
-        .EN_write_data(1'b1),
+    //    .write_data_address(addr_in[5:0]),
+    //    .write_data_data(data_in),
+    //    .EN_write_data(1'b1),
 
-        .write_data_data_write_n(data_write_n    | {2{~peri_user[15]}}),
-        
-        .read_data_address(addr_in[5:0]),
-        .read_data_data_read_n(data_read_n_peri | {2{~peri_user[15]}}),
-        .EN_read_data(1'b1),
+    //    .write_data_data_write_n(data_write_n    | {2{~peri_user[15]}}),
+    //    
+    //    .read_data_address(addr_in[5:0]),
+    //    .read_data_data_read_n(data_read_n_peri | {2{~peri_user[15]}}),
+    //    .EN_read_data(1'b1),
 
-        .read_data(data_from_user_peri[15]),
-        .data_ready(data_ready_from_user_peri[15]),
+    //    .read_data(data_from_user_peri[15]),
+    //    .data_ready(data_ready_from_user_peri[15]),
 
-        .user_interrupt(user_interrupts[15])
-    );
+    //    .user_interrupt(user_interrupts[15])
+    //);
 
     // --------------------------------------------------------------------- //
     // Byte interface peripherals
 
-    tqvp_matt_encoder matt_encoder00 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_matt_encoder matt_encoder00 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[0]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[0]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[0]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[0]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[0])
-    );
+    //    .data_out(data_from_simple_peri[0])
+    //);
 
-    tqvp_edge_counter i_edge_counter01 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_edge_counter i_edge_counter01 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[1]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[1]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[1]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[1]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[1])
-    );
+    //    .data_out(data_from_simple_peri[1])
+    //);
 
-    tqvp_cattuto_ws2812b_driver i_cattuto_ws2812b_driver02 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_cattuto_ws2812b_driver i_cattuto_ws2812b_driver02 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[2]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[2]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[2]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[2]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[2])
-    );
+    //    .data_out(data_from_simple_peri[2])
+    //);
 
-    tqvp_impostor_WS2812b javi_WS2812b_slave (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_impostor_WS2812b javi_WS2812b_slave (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[3]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[3]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[3]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[3]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[3])
-    );
+    //    .data_out(data_from_simple_peri[3])
+    //);
 
-    tqvp_pwm_sujith pwm_sk(
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_pwm_sujith pwm_sk(
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[4]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[4]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[4]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[4]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[4])
-    );
+    //    .data_out(data_from_simple_peri[4])
+    //);
 
-    tqvp_matt_pwm matt_pwm (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_matt_pwm matt_pwm (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[5]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[5]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[5]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[5]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[5])
-    );
+    //    .data_out(data_from_simple_peri[5])
+    //);
 
-    tqvp_spike spike(
-        .clk(clk),
-        .rst_n(rst_n),
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[6]),
+    //tqvp_spike spike(
+    //    .clk(clk),
+    //    .rst_n(rst_n),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[6]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[6]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[6]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[6])
-    );
+    //    .data_out(data_from_simple_peri[6])
+    //);
 
-    tqvp_rebeccargb_universal_decoder ubcd (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_rebeccargb_universal_decoder ubcd (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[7]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[7]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[7]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[7]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[7])
-    );
+    //    .data_out(data_from_simple_peri[7])
+    //);
 
-    tqvp_rebeccargb_hardware_utf8 hardware_utf8 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_rebeccargb_hardware_utf8 hardware_utf8 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[8]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[8]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[8]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[8]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[8])
-    );
+    //    .data_out(data_from_simple_peri[8])
+    //);
 
-    tqvp_meiniKi_waveforms i_tqvp_meiniKi_waveforms (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_meiniKi_waveforms i_tqvp_meiniKi_waveforms (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[9]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[9]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[9]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[9]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[9])
-    );
+    //    .data_out(data_from_simple_peri[9])
+    //);
 
-    tqvp_htfab_anatool analog_toolkit (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_htfab_anatool analog_toolkit (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[10]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[10]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[10]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[10]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[10])
-    );
+    //    .data_out(data_from_simple_peri[10])
+    //);
 
-    tqvp_crc32 crc32(
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_crc32 crc32(
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[11]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[11]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[11]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[11]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[11])
-    );
+    //    .data_out(data_from_simple_peri[11])
+    //);
 
-    tqvp_htfab_vga_tester vga_tester (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_htfab_vga_tester vga_tester (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[12]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[12]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[12]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[12]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[12])
-    );
+    //    .data_out(data_from_simple_peri[12])
+    //);
 
-    tqvp_alonso_rsa i_tqvp_alonso_rsa_user_simple013 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_alonso_rsa i_tqvp_alonso_rsa_user_simple013 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[13]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[13]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[13]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[13]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[13])
-    );
+    //    .data_out(data_from_simple_peri[13])
+    //);
 
     tqvp_spi_peripheral i_user_simple014 (
         .clk(clk),
@@ -697,40 +697,40 @@ module tinyQV_peripherals #(parameter CLOCK_MHZ=64) (
         .data_out(data_from_simple_peri[14])
     );
 
-    hamming_7_4 hamming015 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //hamming_7_4 hamming015 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_simple_peri[15]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_simple_peri[15]),
 
-        .address(addr_in[3:0]),
+    //    .address(addr_in[3:0]),
 
-        .data_write((data_write_n != 2'b11) & peri_simple[15]),
-        .data_in(data_in[7:0]),
+    //    .data_write((data_write_n != 2'b11) & peri_simple[15]),
+    //    .data_in(data_in[7:0]),
 
-        .data_out(data_from_simple_peri[15])
-    );
+    //    .data_out(data_from_simple_peri[15])
+    //);
 
     // --------------------------------------------------------------------- //
     // Additional full interface peripherals with no interrupt
 
-    tqvp_dsatizabal_fpu i_user_peri32 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_dsatizabal_fpu i_user_peri32 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[16]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[16]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[16]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[16]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[16]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[16]}}),
 
-        .data_out(data_from_user_peri[16]),
-        .data_ready(data_ready_from_user_peri[16])
-    );
+    //    .data_out(data_from_user_peri[16]),
+    //    .data_ready(data_ready_from_user_peri[16])
+    //);
 
 //    tqvp_toivoh_pwl_synth i_user_peri33 (
 //        .clk(clk),
@@ -749,107 +749,107 @@ module tinyQV_peripherals #(parameter CLOCK_MHZ=64) (
 //        .data_ready(data_ready_from_user_peri[17])
 //    );
 
-    tqvp_full_empty i_user_peri33 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_full_empty i_user_peri33 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[17]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[17]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[17]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[17]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[17]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[17]}}),
 
-        .data_out(data_from_user_peri[17]),
-        .data_ready(data_ready_from_user_peri[17])
-    );
+    //    .data_out(data_from_user_peri[17]),
+    //    .data_ready(data_ready_from_user_peri[17])
+    //);
 
-    tqvp_laurie_dwarf_line_table_accelerator i_user_peri34 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_laurie_dwarf_line_table_accelerator i_user_peri34 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[18]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[18]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[18]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[18]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[18]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[18]}}),
 
-        .data_out(data_from_user_peri[18]),
-        .data_ready(data_ready_from_user_peri[18])
-    );
+    //    .data_out(data_from_user_peri[18]),
+    //    .data_ready(data_ready_from_user_peri[18])
+    //);
 
-    tqvp_cattuto_xoshiro128plusplus_prng i_user_peri35 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_cattuto_xoshiro128plusplus_prng i_user_peri35 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[19]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[19]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[19]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[19]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[19]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[19]}}),
 
-        .data_out(data_from_user_peri[19]),
-        .data_ready(data_ready_from_user_peri[19])
-    );
+    //    .data_out(data_from_user_peri[19]),
+    //    .data_ready(data_ready_from_user_peri[19])
+    //);
 
-    tqvp_full_empty i_user_peri36 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_full_empty i_user_peri36 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[20]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[20]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[20]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[20]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[20]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[20]}}),
 
-        .data_out(data_from_user_peri[20]),
-        .data_ready(data_ready_from_user_peri[20])
-    );
+    //    .data_out(data_from_user_peri[20]),
+    //    .data_ready(data_ready_from_user_peri[20])
+    //);
 
-    tqvp_rebeccargb_intercal_alu  i_user_peri37 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_rebeccargb_intercal_alu  i_user_peri37 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[21]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[21]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[21]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[21]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[21]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[21]}}),
 
-        .data_out(data_from_user_peri[21]),
-        .data_ready(data_ready_from_user_peri[21])
-    );
+    //    .data_out(data_from_user_peri[21]),
+    //    .data_ready(data_ready_from_user_peri[21])
+    //);
 
-    tqvp_full_empty i_user_peri38 (
-        .clk(clk),
-        .rst_n(rst_n),
+    //tqvp_full_empty i_user_peri38 (
+    //    .clk(clk),
+    //    .rst_n(rst_n),
 
-        .ui_in(ui_in),
-        .uo_out(uo_out_from_user_peri[22]),
+    //    .ui_in(ui_in),
+    //    .uo_out(uo_out_from_user_peri[22]),
 
-        .address(addr_in[5:0]),
-        .data_in(data_in),
+    //    .address(addr_in[5:0]),
+    //    .data_in(data_in),
 
-        .data_write_n(data_write_n    | {2{~peri_user[22]}}),
-        .data_read_n(data_read_n_peri | {2{~peri_user[22]}}),
+    //    .data_write_n(data_write_n    | {2{~peri_user[22]}}),
+    //    .data_read_n(data_read_n_peri | {2{~peri_user[22]}}),
 
-        .data_out(data_from_user_peri[22]),
-        .data_ready(data_ready_from_user_peri[22])
-    );
+    //    .data_out(data_from_user_peri[22]),
+    //    .data_ready(data_ready_from_user_peri[22])
+    //);
 
     //tqvp_affinex i_user_peri39 (
     //    .clk(clk),
